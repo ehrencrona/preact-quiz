@@ -1,0 +1,33 @@
+.results h2 {
+  font-size: 1.6rem;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.6em;
+}
+
+.results .answer {
+  margin-bottom: 0.6em;
+}
+
+.results .answer::before {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  left: -0.6em;
+  font-weight: 600;
+}
+
+.results .correct {
+  color: #2ca007;
+}
+
+.results .correct::before {
+  content: "+";
+}
+
+.results .incorrect {
+  color: #e24406;
+}
+
+.results .incorrect::before {
+  content: "-";
+}

@@ -1,0 +1,38 @@
+:root {
+	--background: #0c0c0c;
+	--foreground: #c0c0c0;
+	--accent: #d46d03;
+	--hover-accent: #ff8100;
+
+  --page-width: 600px;
+  --content-min-height: 300px;
+  --buttons-height: 4em;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	font-family: Yanone Kaffeesatz;
+	font-size: 24px;
+	font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	padding: 0;
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	background-color: var(--background);
+	color: var(--foreground);
+}

@@ -1,0 +1,65 @@
+.page {
+  width: var(--page-width);
+  max-width: 100%;
+}
+
+.content {
+  padding: 1em;
+  min-height: var(--content-min-height);
+  box-sizing: border-box;
+
+  max-height: calc(100vh - var(--buttons-height));
+  margin-bottom: var(--buttons-height);
+  
+  overflow-y: scroll;
+}
+
+.buttons .fade {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  top: -30px;
+  height: 30px;
+  margin-bottom: -30px;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1) 60%);
+}
+
+.buttons {
+  width: var(--page-width);
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
+
+  position: fixed;
+  bottom: 0;
+  height: var(--buttons-height);
+}
+
+@media (min-height: 800px) {
+  .content {
+    padding-bottom: 0;
+  }
+
+  .buttons {
+    position: relative;
+  }
+}
+
+button {
+  margin-right: 1em;
+  color: black;
+  background-color: var(--accent);
+  border: none;
+  padding: 0.5em 0.8em;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 0.1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--hover-accent);
+}
